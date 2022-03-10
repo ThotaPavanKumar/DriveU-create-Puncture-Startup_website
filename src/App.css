@@ -11,6 +11,9 @@
   margin-left: 5%;
   position: relative;
   top: 200px;
+  height: 900vh;
+  padding-bottom: 200px;
+  /* border: 2px solid blue; */
 }
 .container img {
   width: 100%;

@@ -410,7 +410,7 @@ export const array = [
         discount : 8 ,
         payment : ["Bhim App","Gpay","Cash on Delivery"],
         image : 
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpJ_900pzfiG8FOJ9c3WykHb-uF1SR85a3lg&usqp=CAU",         
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSthnL43em8ODqMSx8j9HV-6wlQ1NP5sf52lg&usqp=CAU",         
 
     }
 ]
