@@ -97,6 +97,7 @@ export const array = [
             outTime : 6},
         date : "29/03/2022",   
         discount : 8 ,
+        payment : ["Bhim App","Gpay","Cash on Delivery"],
         image : 
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpJ_900pzfiG8FOJ9c3WykHb-uF1SR85a3lg&usqp=CAU",         
 

@@ -73,7 +73,7 @@ const Login = () => {
         <button className={styled.btn} onClick={(e) => handleSubmit(e)}>
           Submit
         </button>
-        {flag ? <Navigate to="/" /> : ""}
+        {flag ? <Navigate to="/success" /> : ""}
       </div>
     </div>
   );
