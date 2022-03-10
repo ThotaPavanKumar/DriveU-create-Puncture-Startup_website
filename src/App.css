@@ -21,10 +21,11 @@
   padding: 3%;
   border-radius: 4%;
 }
-.box img,p{
+.box img,
+p {
   text-align: center;
 }
-.box Button{
+.box Button {
   margin-left: 32%;
 }
 .navbar {
@@ -40,8 +41,6 @@
   display: flex;
   justify-content: space-between;
   width: 100px;
-  color: black;
-  background-color: black;
 }
 .navbar img {
   width: 9%;
@@ -52,6 +51,14 @@
   justify-content: space-between;
   padding-bottom: 30px;
   margin-left: 50%;
-  top : 100px;
+  top: 100px;
   z-index: 1;
+}
+.btnDiv {
+  /* border: 1px solid blue; */
+  margin-top: 100px;
+  margin-bottom: -180px;
+  margin-right: 60px;
+  font-size: 22px;
+  text-align: right;
 }

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import {array} from "../data/data" 
 import {AiFillStar} from "react-icons/ai"
 import {Select,Button} from "antd"
+import { Navbar } from './Navbar';
 const {Option} = Select;
 
 export const  Homepage = () =>  {
@@ -29,16 +30,22 @@ export const  Homepage = () =>  {
                  ratingArr = array.filter((ele) => ele.ratings === 5);
             } else  if(value === "8") {
                 ratingArr = array.filter((ele) => ele.ratings === 8);
+            } else  if(value === "9") {
+                ratingArr = array.filter((ele) => ele.ratings === 9);
             } 
       setRating(ratingArr);
       console.log(ratingArr);
     }
     const handleDiscount = (value) => {
         let discountArr;
-            if(value === "5") {
-                 discountArr = array.filter((ele) => ele.discount === 5);
-            } else  if(value === "8") {
-                discountArr = array.filter((ele) => ele.discount === 8);
+            if(value === "10") {
+                 discountArr = array.filter((ele) => ele.discount === 10);
+            } else  if(value === "12") {
+                discountArr = array.filter((ele) => ele.discount === 12);
+            } else  if(value === "15") {
+                discountArr = array.filter((ele) => ele.discount === 15);
+            } else  if(value === "18") {
+                discountArr = array.filter((ele) => ele.discount === 18);
             } 
       setDiscount(discountArr);
       console.log(discountArr);
@@ -48,6 +55,11 @@ export const  Homepage = () =>  {
         setData(state?.length > 0 ?rating?.length > 0 ? rating :state : array ); 
        }
     ,[state,rating])
+
+    useEffect (() => {
+        setData(state?.length > 0 ?discount?.length > 0 ? discount :state : array ); 
+       }
+    ,[state,discount])
 
     const handleCart = (data) => {
         if (localStorage.getItem("punctureCart") === null) {
@@ -62,6 +74,7 @@ export const  Homepage = () =>  {
 
   return (
       <div>
+      <Navbar />
       <div className='filter'>
         <div>
             <Select placeholder="Filter By Radius" onChange={handleSubmit}>
@@ -72,8 +85,9 @@ export const  Homepage = () =>  {
         </div>
         <div>
             <Select placeholder="Filter By Rating" onChange={handleRating}>
-                <Option value="5">greater than 5</Option>
-                <Option value="8">greater than 8</Option>
+                <Option value="5">rating 5</Option>
+                <Option value="8">rating 8</Option>
+                <Option value="9">rating 9</Option>
             </Select>
         </div>
         <div>

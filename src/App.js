@@ -5,7 +5,7 @@ import { Router } from './components/MyRoutes/Router';
 function App() {
   return (
     <div >
-      <Router />
+     <Router />
     </div>
   );
 }

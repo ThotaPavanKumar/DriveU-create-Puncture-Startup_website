@@ -23,7 +23,7 @@ export const array = [
         street : "Edga Road",
         availTime : {inTime : 2,
             outTime : 4},
-        date : "11/03/2022" ,
+        date : "19/03/2022" ,
         discount : 20,
         image : 
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv3SuM-JKenG1DyeA3shmPtoIzTI08FMcdXw&usqp=CAU",    
@@ -52,7 +52,7 @@ export const array = [
         street : "Vinayak Colony",
         availTime : {inTime : 1,
             outTime : 3},
-        date : "13/03/2022" ,
+        date : "09/03/2022" ,
         discount : 18,
         image : 
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT4qOZM4WqS1ZxvkuAhHbzT7f7meQ8vcjTmw&usqp=CAU",  
@@ -67,7 +67,7 @@ export const array = [
         street : "Gandhi Street",
         availTime : {inTime : 2,
             outTime : 4},
-        date : "16/03/2022" ,
+        date : "19/03/2022" ,
         discount : 12,
         image :  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpNWCJfEQXYOTIgVoJEHCn25R72FSHlOr4gg&usqp=CAU", 
 
@@ -81,7 +81,7 @@ export const array = [
         street : "Thousand Street",
         availTime : {inTime : 5,
             outTime : 6},
-        date : "18/03/2022",   
+        date : "29/03/2022",   
         discount : 14 ,
         image : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtXtkuA4eATCHeCeDnhp4flBzm6Z5eiF83RQ&usqp=CAU", 
 
@@ -95,7 +95,7 @@ export const array = [
         street : "Masab Street",
         availTime : {inTime : 5,
             outTime : 6},
-        date : "22/03/2022",   
+        date : "29/03/2022",   
         discount : 8 ,
         image : 
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpJ_900pzfiG8FOJ9c3WykHb-uF1SR85a3lg&usqp=CAU",         

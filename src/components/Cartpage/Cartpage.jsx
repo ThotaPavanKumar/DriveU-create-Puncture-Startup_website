@@ -1,6 +1,7 @@
 import React, { useState,useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import { CartProduct } from '../CartProduct/CartProduct';
+import { Navbar } from '../Navbar';
 
 export  const Cartpage = () => {
 
@@ -27,24 +28,26 @@ export  const Cartpage = () => {
 
   return (
       <>
-
+    <Navbar />
+    
 {cartProducts === null ? (
         <div className="heading">Your Cart</div>
       ) : (
         <div>
           <div className="heading">Your Cart</div>
-          <div className="container1">
+          <div className="btnDiv">
+        <Link to="/login" className="checkOutBtn">
+          Checkout
+        </Link>
+      </div>
+          <div className="container">
             {cartProducts.map((e) => (
               <CartProduct key={e.id} product={e} handleDelete={handleDelete} />
             ))}
           </div>
         </div>
       )}
-      <div className="btnDiv">
-        <Link to="/payment" className="checkOutBtn">
-          Checkout
-        </Link>
-      </div>
+    
 </>
   )
 }

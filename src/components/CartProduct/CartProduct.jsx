@@ -1,5 +1,7 @@
 import React from 'react'
 import { Button } from "antd/lib/radio";
+import { AiFillStar } from 'react-icons/ai';
+import { Navbar } from '../Navbar';
 
 export const CartProduct = ({ product, handleDelete }) =>  {
   const addToWishlist = (data) => {
@@ -12,23 +14,18 @@ export const CartProduct = ({ product, handleDelete }) =>  {
     localStorage.setItem("WishList", JSON.stringify(wishlistPro));
   };
 
-  return (
-    <div className="productCard">
-      <div>
-        <div>
-          <img className="img" src={product.image} alt="product" />
-        </div>
-        <div>
-          <div>{product.shopName}</div>
-          <div>{product.ratings}</div>
-        </div>
-        <div>
-          <Button onClick={() => addToWishlist(product)}>
-            Add to Wishlist
-          </Button>
-          <Button onClick={() => handleDelete(product)}>Delete</Button>
-        </div>
-      </div>
-    </div>
+  return (    
+        <>
+                <div className='box'>
+                        <img src={product.image} alt={product.shopName}/>
+                        <p >{product.shopName}</p>
+                        <p>Ratings : {product.ratings} <AiFillStar /> </p>
+                        <Button onClick={() => addToWishlist(product)}>
+       Add to Wishlist
+       </Button>
+     <Button onClick={() => handleDelete(product)}>Delete</Button>
+                </div>  
+                </>  
+  
   );
 }
