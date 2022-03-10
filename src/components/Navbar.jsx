@@ -1,7 +1,7 @@
-
 import React from 'react'
 import {FaUserAlt} from "react-icons/fa"
 import {BsCartFill} from "react-icons/bs"
+import { Link } from 'react-router-dom'
 
 export const  Navbar = () =>  {
   return (
@@ -11,7 +11,7 @@ export const  Navbar = () =>  {
         </div>
         <div className='right'>
             <div><FaUserAlt style={{fontSize: "25px"}}/></div>
-            <div><BsCartFill  style={{fontSize: "25px"}}/></div>
+            <div><Link to={"/cartpage"}><BsCartFill  style={{fontSize: "25px"}}/></Link></div>
         </div>
         
     </div>

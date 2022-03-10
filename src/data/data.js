@@ -1,6 +1,7 @@
 
 export const array = [
     {
+        _id : 1,
         shopName: "pava",
         ratings : 5,
         radius : 500,
@@ -14,6 +15,7 @@ export const array = [
 
     },
     {
+        _id : 2,
         shopName: "garage",
         ratings : 8,
         radius : 1000,
@@ -28,6 +30,7 @@ export const array = [
 
     },
     {
+        _id : 3,
         shopName: "mrf",
         ratings : 10,
         radius : 1500,
@@ -41,6 +44,7 @@ export const array = [
 
     },
     {
+        _id : 4,
         shopName: "pava",
         ratings : 9,
         radius : 500,
@@ -55,6 +59,7 @@ export const array = [
 
     },
     {
+        _id : 5,
         shopName: "garage",
         ratings : 8,
         radius : 1000,
@@ -68,6 +73,7 @@ export const array = [
 
     },
     {
+        _id : 6,
         shopName: "mrf",
         ratings : 10,
         radius : 1500,
@@ -81,6 +87,7 @@ export const array = [
 
     },
     {
+        _id : 7,
         shopName: "mrf",
         ratings : 10,
         radius : 500,

@@ -49,6 +49,16 @@ export const  Homepage = () =>  {
        }
     ,[state,rating])
 
+    const handleCart = (data) => {
+        if (localStorage.getItem("punctureCart") === null) {
+            localStorage.setItem("punctureCart", JSON.stringify([]));
+          }
+      
+          let basket = JSON.parse(localStorage.getItem("punctureCart"));
+          basket.push(data);
+          localStorage.setItem("punctureCart", JSON.stringify(basket));
+      
+    }
 
   return (
       <div>
@@ -86,7 +96,7 @@ export const  Homepage = () =>  {
                         <p >{ele.shopName}</p>
                         <p>Location : {ele.location} </p>
                         <p>Ratings : {ele.ratings} <AiFillStar /> </p>
-                        <Button >Add To Cart</Button>
+                        <Button onClick={() => handleCart(ele)}>Add To Cart</Button>
                 </div>
             )
         })

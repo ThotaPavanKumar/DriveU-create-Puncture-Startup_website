@@ -1,13 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import { Homepage } from './components/Homepage';
-import { Navbar } from './components/Navbar';
+import { Router } from './components/MyRoutes/Router';
 
 function App() {
   return (
     <div >
-     <Navbar />
-      <Homepage />
+      <Router />
     </div>
   );
 }
