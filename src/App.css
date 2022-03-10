@@ -17,10 +17,22 @@
   height: 250px;
 }
 .box {
-  border: 1px solid;
+  /* border: 1px solid; */
   padding: 3%;
   border-radius: 4%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+/* .box {
+  box-shadow: 7px 5px 5px 6px rebeccapurple;
+  padding: 20px;
+  margin-top: 50px;
+} */
+.box:hover {
+  transition-duration: 2s;
+  transform: translateY(20px);
+  box-shadow: 7px 5px 5px 6px grey;
+}
+
 .box img,
 p {
   text-align: center;
