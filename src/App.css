@@ -1,0 +1,55 @@
+@import "antd/dist/antd.css";
+
+.App {
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  gap: 2%;
+  margin-left: 5%;
+  position: relative;
+  top: 200px;
+}
+.container img {
+  width: 100%;
+  height: 250px;
+}
+.box {
+  border: 1px solid;
+  padding: 3%;
+  border-radius: 4%;
+}
+.box img,p{
+  text-align: center;
+}
+.box Button{
+  margin-left: 32%;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+  width: 100%;
+  background-color: brown;
+  position: fixed;
+  z-index: 1;
+}
+.navbar > div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+}
+.navbar img {
+  width: 9%;
+}
+.filter {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  margin-left: 50%;
+  top : 100px;
+  z-index: 1;
+}
