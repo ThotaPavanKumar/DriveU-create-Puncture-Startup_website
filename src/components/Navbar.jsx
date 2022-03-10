@@ -4,6 +4,7 @@ import {BsCartFill} from "react-icons/bs"
 import { Link } from 'react-router-dom'
 
 export const  Navbar = () =>  {
+  const cart = JSON.parse(localStorage.getItem("punctureCart"));
   return (
     <div className='navbar'>
         <div >
@@ -13,7 +14,7 @@ export const  Navbar = () =>  {
         </div>
         <div className='right'>
             <div><FaUserAlt style={{fontSize: "25px"}}/></div>
-            <div><Link to="/cartpage"><BsCartFill  style={{fontSize: "25px",textDecoration:"none",color:"black"}}/></Link></div>
+            <div><Link to="/cartpage"><BsCartFill  style={{fontSize: "25px",textDecoration:"none",color:cart.length>0?"blue":"black"}}/></Link></div>
         </div>
         
     </div>

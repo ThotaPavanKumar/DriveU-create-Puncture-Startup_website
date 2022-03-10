@@ -1,25 +1,21 @@
 import React, { useEffect, useState } from 'react'
-import { Navigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { Navbar } from '../Navbar'
 
 export const Ordersuccess = () => {
-  const [flag,setFlag] = useState(false);
+  const navigate = useNavigate();
 
-  const handleSubmit = () => {
-    alert("order successful");
-    setFlag(true);
-  }
-
-  return (
-    <>
+  React.useEffect(()=>{
+    setTimeout(()=>{
+      alert("order successful");
+      navigate("/");
+    },2000);
+  },[])
+  return (<div >
       <Navbar />
       <h1 style={{color:"brown",textAlign: "center"}}>Order is successful</h1>
       <img style={{marginLeft : "25%"}} src={"./success.jpeg"} alt="successorder"/>
-      <button onClick={(e) => handleSubmit(e)}>
-          Homepage
-        </button>
-        {flag ? <Navigate to="/main" /> : ""}
-    </>
+    </div>
    
   )
 }
